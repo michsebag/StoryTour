@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/style.css">
+</head>
+<body>
+<h3 class='title-of-project'>Story Tour</h3>
+<h4 class='text-about-project'>
+    The purpose of the project is to create a platform which takes books as input and shows the locations mentioned in
+    them on a map.
+</h4>
+<h4 class='text-about-project'>
+    For example, one could use this information and see the path the hero of the book travelled from the beginning to
+    the end.
+</h4>
+<div id="progress"></div>
+<span class='counter-of-markers'>Added markers count</span>:<span id="totalAddedMarker"></span>
+<div id="map"></div>
+<div class="buttons-container">
+    <button id="myBtn" type="button" class="btn btn-info">Reset Map</button>
+    <button id="uploadButton" type="button" class="btn btn-info">Upload File</button>
+    <input id="fileuploader" type='file' accept='text/json' onchange='openFile(event)' hidden/>
+</div>
+
+<div id="mytext"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBImFc_KpXFs2vsNNOFptiKOQyGPXpaG_s&callback=initMap"
+        async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.rawgit.com/suchg/google.map_markers_multi/master/jquery.ajaxQueue.js"></script>
+<script src="../resources/script.js"></script>
+
+</body>
+</html>
